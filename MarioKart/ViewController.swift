@@ -91,37 +91,31 @@ class ViewController: UIViewController {
         
         //animation of the kart
         UIView.animate(withDuration: 0.7) {
-            
-            //move kart
             kartView.center.x += 350
-            
-            //reset karts to starting location
-            self.marioKartView.center = self.marioStartingPoint
-            self.bowserKartView.center = self.bowserStartingPoint
-            self.warioKartView.center = self.warioStartingPoint
-            self.luigiKartView.center = self.luigiStartingPoint
-            self.toadKartView.center = self.toadStartingPoint
-            
-            //reset karts to their original states (restoring scale and rotation)
-            self.marioKartView.transform = CGAffineTransform.identity
-            self.bowserKartView.transform = CGAffineTransform.identity
-            self.warioKartView.transform = CGAffineTransform.identity
-            self.luigiKartView.transform = CGAffineTransform.identity
-            self.toadKartView.transform = CGAffineTransform.identity
         }
 }
     
     
     @IBAction func didLongPressBackground(_ sender: UILongPressGestureRecognizer) {
         
-        //reset the kart positions
-        marioKartView.center = marioStartingPoint
-        bowserKartView.center = bowserStartingPoint
-        warioKartView.center = warioStartingPoint
-        luigiKartView.center = luigiStartingPoint
-        toadKartView.center = toadStartingPoint
-    }
-    
-    
-    
+        print("long press recognized")
+        
+            //animate the resetting of kart positions
+            UIView.animate(withDuration: 0.2) {
+                
+                //reset karts to starting location
+                self.marioKartView.center = self.marioStartingPoint
+                self.bowserKartView.center = self.bowserStartingPoint
+                self.warioKartView.center = self.warioStartingPoint
+                self.luigiKartView.center = self.luigiStartingPoint
+                self.toadKartView.center = self.toadStartingPoint
+                
+                //reset karts to their original states (restoring scale and rotation)
+                self.marioKartView.transform = CGAffineTransform.identity
+                self.bowserKartView.transform = CGAffineTransform.identity
+                self.warioKartView.transform = CGAffineTransform.identity
+                self.luigiKartView.transform = CGAffineTransform.identity
+                self.toadKartView.transform = CGAffineTransform.identity
+            }
 }
+    }

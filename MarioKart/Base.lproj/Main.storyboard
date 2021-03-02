@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="vBk-ic-oQd" appends="YES" id="T4M-Kz-4vl"/>
+                                    <outletCollection property="gestureRecognizers" destination="xOT-R0-zzf" appends="YES" id="pJq-tt-h5K"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_0" translatesAutoresizingMaskIntoConstraints="NO" id="Vum-cz-h1X">
@@ -238,9 +238,9 @@
                         <action selector="didTapKartView:" destination="BYZ-38-t0r" id="kmU-3H-LXG"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vBk-ic-oQd">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xOT-R0-zzf">
                     <connections>
-                        <action selector="didLongPressBackground:" destination="BYZ-38-t0r" id="m0x-fa-jgB"/>
+                        <action selector="didLongPressBackground:" destination="BYZ-38-t0r" id="ICD-bN-CRk"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
