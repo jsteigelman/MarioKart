@@ -22,14 +22,31 @@ class ViewController: UIViewController {
         //print the current location returned from the gesture recognizer
         print("Location: x: \(location.x), y: \(location.y)")
         
-        
         //access the view of the kart that was panned
         let kartView = sender.view!
         
         //set the kart view's position to the current position of the gesture recognizer
         kartView.center = location
+    }
+    
+    
+    @IBAction func didPinchKartView(_ sender: UIPinchGestureRecognizer) {
+        
+        //access the scale property of the gesture recognizer that was pinched
+        let scale = sender.scale
+        
+        //print the scale value to the console
+        print("scale: \(scale)")
+        
+        //access the view of the kart that was panned
+        let kartView = sender.view!
+        
+        //adjust the scale of the kart view using the scale from the pinch gesture recognizer
+        kartView.transform = CGAffineTransform(scaleX: scale, y: scale)
         
     }
+    
+    
     
 }
 
