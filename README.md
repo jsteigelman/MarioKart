@@ -15,4 +15,5 @@ The following features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/wH5FdXLTUV.gif' title='Video Walkthrough (1/2)' width='250' alt='Video Walkthrough 1 of 2' />
+<img src='http://g.recordit.co/D5AF8xIMf3.gif' title='Video Walkthrough (2/2)' width='250' alt='Video Walkthrough 2 of 2' />
