@@ -25,7 +25,7 @@ Here's a walkthrough of implemented user stories:
 <tr>
   <td>Moving</td>
   <td>Resetting (long-press)</td>
-  <td>Exiting (double-tap)</td>
+  <td>Speeding off screen (double-tap)</td>
   <td>Scaling</td>
   <td>Rotating</td>
  </tr>
