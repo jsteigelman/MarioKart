@@ -19,6 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WaP-tb-3CU">
                                 <rect key="frame" x="-49" y="0.0" width="505" height="898"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vBk-ic-oQd" appends="YES" id="T4M-Kz-4vl"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_0" translatesAutoresizingMaskIntoConstraints="NO" id="Vum-cz-h1X">
                                 <rect key="frame" x="56" y="324" width="100" height="100"/>
@@ -120,6 +124,13 @@
                             <constraint firstItem="6lA-9k-qfk" firstAttribute="top" secondItem="ieg-su-Wdr" secondAttribute="bottom" constant="20" id="ySK-g4-3kb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bowserKartView" destination="Vum-cz-h1X" id="b8d-vr-NwC"/>
+                        <outlet property="luigiKartView" destination="6lA-9k-qfk" id="CfN-8A-hfg"/>
+                        <outlet property="marioKartView" destination="0V0-De-tOB" id="HGd-Ho-WAu"/>
+                        <outlet property="toadKartView" destination="zKX-jB-sqc" id="D8o-Eg-aGA"/>
+                        <outlet property="warioKartView" destination="ieg-su-Wdr" id="YhL-8y-6Qo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="1Ia-4Q-ExK">
@@ -227,6 +238,11 @@
                         <action selector="didTapKartView:" destination="BYZ-38-t0r" id="kmU-3H-LXG"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vBk-ic-oQd">
+                    <connections>
+                        <action selector="didLongPressBackground:" destination="BYZ-38-t0r" id="m0x-fa-jgB"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
