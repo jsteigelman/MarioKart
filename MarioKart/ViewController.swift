@@ -48,5 +48,23 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func didRotateKartView(_ sender: UIRotationGestureRecognizer) {
+    
+        //access the location property of the gesture recognizer that was rotated
+        let rotation = sender.rotation
+        
+        //print the rotation value to the console
+        print("rotation: \(rotation)")
+        
+        //access the view of the kart that was panned
+        let kartView = sender.view!
+        
+        //adjust the rotation of the kart view using the rotation from the pinch gesture recognizer
+        kartView.transform = CGAffineTransform(rotationAngle: rotation)
+    
+    }
+    
+    
+    
 }
 
