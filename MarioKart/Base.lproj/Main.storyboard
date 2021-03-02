@@ -34,6 +34,7 @@
                                     <outletCollection property="gestureRecognizers" destination="7Wt-L5-O8w" appends="YES" id="YVo-Bf-UFQ"/>
                                     <outletCollection property="gestureRecognizers" destination="p8t-wh-rfJ" appends="YES" id="Jeh-dc-3SB"/>
                                     <outletCollection property="gestureRecognizers" destination="mXS-1g-PTv" appends="YES" id="WYz-au-b0U"/>
+                                    <outletCollection property="gestureRecognizers" destination="0v2-a2-mtl" appends="YES" id="EPr-Nd-fo4"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_3" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-su-Wdr">
@@ -49,6 +50,7 @@
                                     <outletCollection property="gestureRecognizers" destination="upo-fS-vAZ" appends="YES" id="O9w-WG-Vv2"/>
                                     <outletCollection property="gestureRecognizers" destination="K8x-w5-x2t" appends="YES" id="hF0-cY-NIr"/>
                                     <outletCollection property="gestureRecognizers" destination="XeO-4k-TVe" appends="YES" id="oO3-sb-eUv"/>
+                                    <outletCollection property="gestureRecognizers" destination="Ntd-Fx-DJY" appends="YES" id="iiK-dg-dJP"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_4" translatesAutoresizingMaskIntoConstraints="NO" id="6lA-9k-qfk">
@@ -64,6 +66,7 @@
                                     <outletCollection property="gestureRecognizers" destination="5Kc-qz-JHn" appends="YES" id="5I9-o0-aUk"/>
                                     <outletCollection property="gestureRecognizers" destination="53L-JE-utl" appends="YES" id="zeM-CX-fGB"/>
                                     <outletCollection property="gestureRecognizers" destination="CON-vz-kU7" appends="YES" id="s8C-j6-48l"/>
+                                    <outletCollection property="gestureRecognizers" destination="hOp-4T-k0r" appends="YES" id="lfL-it-ebz"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="0V0-De-tOB">
@@ -80,6 +83,7 @@
                                     <outletCollection property="gestureRecognizers" destination="1Ia-4Q-ExK" appends="YES" id="7vT-pK-jbf"/>
                                     <outletCollection property="gestureRecognizers" destination="Odq-4b-l2U" appends="YES" id="4Ft-et-1mZ"/>
                                     <outletCollection property="gestureRecognizers" destination="uEb-eJ-IhO" appends="YES" id="yjb-zh-MHT"/>
+                                    <outletCollection property="gestureRecognizers" destination="VJ4-Dw-7AO" appends="YES" id="K4W-3v-gh7"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-jB-sqc">
@@ -92,6 +96,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Apw-6C-lxU" appends="YES" id="qF8-Qp-Sqb"/>
                                     <outletCollection property="gestureRecognizers" destination="xBa-uO-1Eg" appends="YES" id="yRK-de-y34"/>
                                     <outletCollection property="gestureRecognizers" destination="usn-KT-tFu" appends="YES" id="Ghz-Jr-PVD"/>
+                                    <outletCollection property="gestureRecognizers" destination="odN-w1-yws" appends="YES" id="0HB-ie-Jmh"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -197,6 +202,31 @@
                         <action selector="didRotateKartView:" destination="BYZ-38-t0r" id="yqw-vo-ZcQ"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="VJ4-Dw-7AO">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="SaV-oJ-qeo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="0v2-a2-mtl">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="Lqq-tV-wa1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Ntd-Fx-DJY">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="d6t-4U-2wE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="hOp-4T-k0r">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="rnB-0m-MQZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="odN-w1-yws">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="kmU-3H-LXG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>

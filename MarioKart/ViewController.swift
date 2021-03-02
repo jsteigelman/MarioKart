@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var kartOriginalCenter: CGPoint!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +67,19 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func didTapKartView(_ sender: UITapGestureRecognizer) {
+        
+        //test that gesture recognizer works
+        print("Double tap recognized")
+        
+        //access the view of the kart that was panned
+        let kartView = sender.view!
+        
+        //animation of the kart
+        UIView.animate(withDuration: 0.5) {
+            kartView.center.x += 350
+        }
     
     
 }
-
+}
