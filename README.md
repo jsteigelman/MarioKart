@@ -21,7 +21,7 @@ Here's a walkthrough of implemented user stories:
  <td> <img src='https://media.giphy.com/media/MjZYp9cflR14nwIQeb/giphy.gif' title='Video Walkthrough (2/2)' width='250' alt='Video Walkthrough 2 of 2' /> </td>
 </tr>
 <tr>
-  <td>- Panning to move <br>Double-tapping to zoom characters off screen<br>Long-pressing to reset the karts</td>
+  <td>Panning to move <br>Double-tapping to zoom karts off screen<br>Long-pressing to reset the karts</td>
   <td>Scaling</td>
   <td>Rotating</td>
  </tr>
